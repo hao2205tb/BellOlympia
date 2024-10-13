@@ -48,7 +48,7 @@ void setup()
 void loop() 
 {
   unsigned long currentMillis;
-  
+
   if (b_count_flag == true){
     currentMillis = millis();
     if (currentMillis - previousMillis >= LIGHT_TIME) {
@@ -56,7 +56,6 @@ void loop()
       Serial.println("Turn off LED\n");
     }
   }
-  
 }
 
 void ISR_Register(uint8_t btn_pin, void (*ISR)())
